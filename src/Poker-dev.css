@@ -170,7 +170,7 @@ img {
 	width: 100%;
 	height: 100%;
 }
-.p0, .p1, .p2, .p3, .p4 {
+ .p0, .p1, .p2, .p3, .p4 {
  	position: absolute;
 
  	display: flex;
@@ -256,8 +256,7 @@ img {
 
  	left: 0;
  	right: 0;
- 	/* top: 0; */
- 	bottom: 0;
+ 	top: 0;
  	height: 50px;
  	background-color: rgba(0,0,0,0.85);
  	color: white;
@@ -394,12 +393,9 @@ img {
 }
 .player-avatar--container {
 	position: relative;
-	/* height: 100px;
+	height: 100px;
 	width: 100px;
-	border-radius: 100px; */
-	height: 50px;
-	width: 50px;
-	border-radius: 50px;
+	border-radius: 100px;
 	padding: 6px 6px 6px 6px
 }
 
@@ -593,13 +589,10 @@ img {
 @media (max-width: 1079px) {
 	.poker-table--container {
 		position: absolute;
-		/* top: 50%; */
-		top: calc(50% - 40px);
+		top: 50%;
 		transform: translateY(-50%);
 		width: 100%;
-		/* height: auto; */
-		height: calc(100vh - 50px);
-
+		height: auto;
 	}
 	.player-info--bet--container {
 		position: absolute;
@@ -651,49 +644,3 @@ img {
 }
 
 */
-
-
-@media (max-width: 552px) {
-	.poker-table--table-image {
-		width: 100vh;
-		height: 100vh;
-	}
-	.p0, .p1, .p2, .p3, .p4 {
-		position: absolute;
-   
-		display: flex;
-		align-items: center;
-		flex-direction: column;
-   
-	   /* 
-		width: 175px;
-		height: 200px;
-	   
-		border-radius: 200px;
-		*/
-	}
-   
-	.p0 {
-		bottom: 26.262%; /* 41px/962px */ /* ADD 2PX TO ALL VETICAL CALCULATIONS - MOVED PLAYERBOARD UP FOR CARD SPACE  (WAS 4.262%)*/
-		left: 50vh;
-		transform: translateX(-50%) ;
-		/* left: 43.75%; /* 50% - 6.25% (87.5px/1400px) */ 
-	}
-	.p1 {
-		bottom: 26.262%;
-		left: 24.107143%; /* 50% - 25.892857% (362.5px/1400px) */
-	}
-	.p2 {
-		bottom: 35vh; /* 165px / 962px */
-		left: 1vh; /* 50% - 44% (616px/1400px) */ 
-	}
-   
-	.p4 {
-		bottom: 26.262%;
-		right: -24.107143%;
-	}
-	.p3 {
-		bottom: 35vh;
-		right: -33vh;
-	}
-}
