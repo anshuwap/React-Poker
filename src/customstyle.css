@@ -54,7 +54,7 @@
         border-radius: 5px;
         /* font-size: 1.8em !important; */
         font-size: 1.5em !important;
-    height: 40px;
+    height: 45px;
     }
     .player-avatar--container {
         position: relative;
@@ -63,9 +63,10 @@
         border-radius: 50px;
         padding: 6px 6px 6px 6px;
     }
-    .abscard {
-        position: absolute;
-        top: -58px !important;
+    .abscard {  
+            position: absolute;
+            top: -50px !important;
+    
     }
     .player-info--stash--container {
         /* margin-top: -70px;
@@ -102,6 +103,8 @@
     .game-action-bar {
         background-color:transparent !important;
         height: 5px !important;
+        bottom: 24px !important;
+        /* top: 92%; */
         /* background-image: linear-gradient(#58052b 60%, #e85a07 82%); */
         /* background-image: url(".././public/assets/assets1/Floor.png") !important; */
     }
@@ -358,8 +361,11 @@ color: white;
             border-radius: 15px;
         }
     }
+    @media screen and (orientation:landscape) and
+(min-device-width: 320px) and (max-device-width: 768px) {
+ 
 
-    @media (max-width: 736px){
+    /* @media (max-width: 768px){ */
         .poker-app--background {
             position: relative;
             overflow: hidden;
@@ -369,18 +375,18 @@ color: white;
         .poker-table--wrapper {
     position: relative;
     width: 100%;
-    height: 85%;
+    /* height: 85%; */
     /* height: 108%; */
     /* height: 110%; */
-    /* height: 100%; */
+    height: 100%;
     background-image: radial-gradient(#0ccdf8 60%, #4546a6 82%);
     /* url('../public/assets/assets1/Splashscreen.png') */
     /* background-image: radial-gradient(#0ccdf8 60%, #4546a6 82%); */
 }
         .poker-table--container {
     position: absolute;
-    /* top: 44% !important; */
-    top: 51% !important;
+    top: 44% !important;
+    /* top: 51% !important; */
         }
         .community-card-container {
     position: absolute;
@@ -460,10 +466,12 @@ color: white;
 }
 .p3 {
     bottom: 58.1518%;
-    right: 22%;
+    right: 26%;
+    /* right: 22%; */
 }
 .p2 {
     bottom: 57.1518%;
-    left: 18%;
+    left: 24%;
+    /* left: 18%; */
 }
 }
