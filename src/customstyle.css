@@ -1,0 +1,469 @@
+.poker-table-position{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.player-info--stash--image, .player-info--bet--image {
+    height: 25px;
+    width: 25px;
+    display: none;
+}
+.poker-table-girl-position{
+    /* position: absolute;
+    width: 50% !important;
+    height: 60%;
+    text-align: center;
+    left: 18%;
+    top: -14%;   */
+    position: absolute;
+    width: 10% !important;
+    height: 33%;
+    left: 45%;
+    top: 20px;
+    }
+    .mt-32{
+        width: 75%;
+        height: 70%;
+        left: 12%;
+        margin-top: 11% !important;
+    }
+    .player-info--name {
+        display: flex;
+        justify-content: center;
+        /* border-radius: 25px; */
+        border-radius: 0px 25px 25px 0px;
+        position: absolute;
+        bottom: 35px;
+        padding: 12px 0;
+        /* left: -80%; */
+        left: 168%;
+        /* width: 77px; */
+        transform: translateX(-50%);
+        width: 100%;
+        color: whitesmoke;
+        background-color: rgba(0,0,0,0.86);
+        font-size: 12px;
+        width: 160px;
+    }
+    .playing-card {
+        /* display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: white; */
+        border-radius: 5px;
+        /* font-size: 1.8em !important; */
+        font-size: 1.5em !important;
+    height: 40px;
+    }
+    .player-avatar--container {
+        position: relative;
+        height: 100px ;
+        width: 100px ;
+        border-radius: 50px;
+        padding: 6px 6px 6px 6px;
+    }
+    .abscard {
+        position: absolute;
+        top: -58px !important;
+    }
+    .player-info--stash--container {
+        /* margin-top: -70px;
+        margin-left: -72px;
+        width: 80px;
+        background: #000000d9;
+        padding: 6px 0px;
+        border-radius: 20px; */
+     margin-top: -75px;
+    margin-left: -72px;
+    width: 99px;
+    background: #000000d9;
+    padding: 12px 0px;
+    border-radius: 20px;
+    }
+     .player-info--bet--container {
+        display: none;
+        margin-top: -70px;
+        margin-left: -72px;
+        width: 80px;
+        background: #000000d9;
+        padding: 6px 0px;
+        border-radius: 20px;
+    }
+    .player-avatar--image {
+        background-color: black !important;
+    }
+
+   
+   
+    .poker-table--table-image{
+        height: 120%;
+    }
+    .game-action-bar {
+        background-color:transparent !important;
+        height: 5px !important;
+        /* background-image: linear-gradient(#58052b 60%, #e85a07 82%); */
+        /* background-image: url(".././public/assets/assets1/Floor.png") !important; */
+    }
+
+    
+    .action-button{
+        height: 45px;
+        width: 150px;
+  background-color: rgba(4, 4, 33, 0.754);
+border-radius: 15px !important;
+border: 3px solid rgba(4, 4, 33, 0.754);
+font-size: 18px;
+color: white;
+    }  
+
+    .fold-button {
+        height: 45px;
+        width: 150px;
+        /* margin: 0 144px; */
+        margin: 0 80px;
+        background-color: rgba(219, 27, 27, 0.754);
+        border-radius: 15px !important;
+        border: 3px solid rgba(219, 27, 27, 0.754);
+        font-size: 18px;
+        color: white;
+    }
+    .raise-button{
+        height: 45px;
+        width: 150px;
+        background-color: rgb(3, 110, 56);
+        border-radius: 15px !important;
+        border: 3px solid rgb(3, 110, 56);
+        font-size: 18px;
+        color: white;
+    }
+    .dropdown-toggle::after {
+        display: inline-block;
+        margin-left: 0.255em;
+        vertical-align: 0.255em;
+        content: "";
+        border-top: 0.3em solid;
+        border-right: 0em solid transparent;
+        /* border-bottom: 0; */
+        border-left: 0em solid transparent;
+    }
+    .showdown-container--wrapper {
+        display: block;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        overflow: auto;
+        left: auto;
+        right: auto;
+        top: 30px;
+        background-color: rgba(0,0,0,0.85);
+        color: white;
+        height: auto;
+        min-height: 100%;
+        width: 100%;
+        z-index: 100;
+    }
+    .result{
+        border-radius:30px !important;
+    }
+    .result-background{
+        background-color: black ;
+        width: 100%;
+        height: 35px;
+        /* display: flex;
+        align-items: center; */
+    padding: 10px;
+    }
+    .float-left{
+        float: left;
+    }
+    .float-right{
+        float:right;
+    }
+    .result-header{
+        background: rgb(44, 43, 43);
+    }
+    .result-body{
+        background-color: white;
+    }
+    .result-name{
+        margin-left: 5%;
+    font-size: 25px !important;
+    }
+    .result-bg{
+        height: 30px;
+        width: 30px;
+        background: red;
+        border-radius: 50px; 
+        margin-right: 4%; 
+    }
+    .result-icon{
+    margin-top: 10px;
+    font-size: 20px;
+    }
+    .w-100{
+        width: 100%;
+    }
+    .color-black{
+        color: black !important;
+    }
+    .bg-green{
+        background-color: green;
+    }
+    /* .result-footer{
+        display: flex;
+        align-items: center;
+    } */
+    .footer-height{
+        height: 40px;
+    border-radius: 0px 0px 20px 20px;
+    }
+    .result-img{
+        height: 25px;
+        width: 25px;
+        margin-top:10px;
+    }
+    .showdown--nextRound--button {
+        background-color: transparent;
+        border: 0px solid white;
+        color: #f2ebea;
+        padding: 6px;
+        line-height: 1;
+        font-size: 24px;
+    }
+    /* .winner-img{
+        width: 90px;
+        height: 80px;
+    } */
+    .winner-img {
+        width: 70px;
+        height: 55px;
+    }
+
+    h5 {
+        font-size: .9rem;
+    }
+    .drop-button{
+        text-decoration: none; 
+        width: 30%;
+        background: #8686bf;
+        border-radius: 13px;
+        color: white;
+        font-size: 14px;
+        padding: 6px 0px;
+        text-align: center;
+        margin-left: 10px;
+        margin-top:10px;
+    }
+    .drop-text{
+        text-decoration: none; 
+        width: 30%;
+        background: white;
+        border-radius: 13px;
+        color: black;
+        font-size: 14px;
+        padding: 6px 0px;
+        text-align: center;
+        margin-left: 10px;
+        margin-top:10px;
+    }
+    .slider-boi1{
+        transform: rotate(90deg);
+    height: 140px;
+    }
+    .slider-boi1 > div > div {
+        /* position: absolute; */
+        width: 56vh !important;
+        /* height: 10px;
+        margin-top: 35px;
+        border-radius: 0px;
+        background-color: #f7e43f; */
+    }
+    .slider-tracks > div {
+        width: 56vh !important; 
+    }
+    .slider-handles > div > div {
+        color: white !important;
+        font-size: 18px !important;
+        transform: rotate(272deg);
+    }
+
+    .slider-boi {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        /* flex-wrap: nowrap; */
+        transform: rotate(90deg);
+        position: absolute;
+        top: 6px;
+    }
+    .d-flex1{
+        display: flex!important;
+    flex-direction: column;
+    }
+
+    .spinner-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        width: 100%;
+        animation: App-logo-spin infinite 20s linear;
+    }
+    .w-30{
+        width: 300px;
+    }
+
+    tr:hover {
+    background-color: rgba(16, 12, 10, 0.306);
+    color:white !important;
+    }
+
+   .ml-50{
+    margin-left: 50%;
+   }
+
+   .spinner-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    animation: App-logo-spin infinite 0s linear;
+}
+.modal-content {
+    background-color: #2d2c2cd4;
+}
+.close-bg{
+        position: absolute;
+        background-color: #fefe0bfa;
+        right: 0px;
+        border-radius: 50%;
+        top: -9px;
+}
+    
+
+    @media (min-width: 1200px){
+        .action-buttons {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: auto;
+            height: 100%;
+            margin-top: -7%;
+            margin-left: 25%;
+            border-radius: 15px;
+        }
+    }
+
+    @media (max-width: 736px){
+        .poker-app--background {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+        }
+        .poker-table--wrapper {
+    position: relative;
+    width: 100%;
+    height: 85%;
+    /* height: 108%; */
+    /* height: 110%; */
+    /* height: 100%; */
+    background-image: radial-gradient(#0ccdf8 60%, #4546a6 82%);
+    /* url('../public/assets/assets1/Splashscreen.png') */
+    /* background-image: radial-gradient(#0ccdf8 60%, #4546a6 82%); */
+}
+        .poker-table--container {
+    position: absolute;
+    /* top: 44% !important; */
+    top: 51% !important;
+        }
+        .community-card-container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: calc(52.5% - 60px);
+    left: calc(50% - 100px);
+    display: flex;
+    width: 200px;
+    height: 60px;
+}
+.player-avatar--container {
+    height: 50px !important;
+    width: 50px !important;
+}
+
+    .player-info--name {
+        bottom: 13px;
+        padding: 6px 0;
+        width: 120px !important;
+        left: 207%;
+        font-size: 12px !important;
+    }
+    /* bottom: 17px;
+    padding: 6px 0;
+    width: 120px !important;
+    left: 190%;
+    font-size: 12px !important; */
+
+ .player-info--stash--container {
+      
+    margin-top: -34px;
+    margin-left: -72px;
+    width: 99px;
+    background: #000000d9;
+    padding: 6px 0px;
+    border-radius: 20px;
+    }
+
+    /* .mt-32 {
+    width: 70%;
+    height: 82%;
+    left: 14%;
+    margin-top: 11% !important;
+} */
+.mt-32 {
+    width: 70%;
+    height: 65%;
+    left: 14%;
+    margin-top: 14% !important;
+}
+/* .p0 {
+    bottom: 0.262%;
+    left: 50%;
+    transform: translateX(-50%);
+} */
+.p0 {
+    bottom: 5.262%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* .p1 {
+    bottom: 18.262%;
+    left: 13.107143%;
+} */
+.p1 {
+    bottom: 21.262%;
+    left: 18.107143%;
+}
+/* .p4 {
+    bottom: 18.262%;
+    right: 19.107143%;
+} */
+.p4 {
+    bottom: 21.262%;
+    right: 18.107143%;
+}
+.p3 {
+    bottom: 58.1518%;
+    right: 22%;
+}
+.p2 {
+    bottom: 57.1518%;
+    left: 18%;
+}
+}
