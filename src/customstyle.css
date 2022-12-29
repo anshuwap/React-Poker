@@ -15,11 +15,16 @@
     text-align: center;
     left: 18%;
     top: -14%;   */
-    position: absolute;
+    /* position: absolute;
     width: 10% !important;
     height: 33%;
     left: 45%;
+    top: 20px; */
+    height: 37%;
+    left: 43%;
+    position: absolute;
     top: 20px;
+    width: 11%!important;
     }
     .mt-32{
         width: 75%;
@@ -63,11 +68,15 @@
         border-radius: 50px;
         padding: 6px 6px 6px 6px;
     }
-    .abscard {  
+    .abscard {
+        position: absolute;
+        top: -9px !important;
+        left: 77px;
+    }
+    /* .abscard {  
             position: absolute;
             top: -50px !important;
-    
-    }
+        } */
     .player-info--stash--container {
         /* margin-top: -70px;
         margin-left: -72px;
@@ -93,6 +102,9 @@
     }
     .player-avatar--image {
         background-color: black !important;
+       position: relative;
+            z-index: 2;
+        
     }
 
    
@@ -191,14 +203,15 @@ color: white;
     }
     .result-name{
         margin-left: 5%;
-    font-size: 25px !important;
+    font-size: 19px !important;
     }
     .result-bg{
         height: 30px;
         width: 30px;
         background: red;
         border-radius: 50px; 
-        margin-right: 4%; 
+        margin-right: 4%;
+        margin-top: -7px; 
     }
     .result-icon{
     margin-top: 10px;
@@ -363,7 +376,35 @@ color: white;
     }
     @media screen and (orientation:landscape) and
 (min-device-width: 320px) and (max-device-width: 768px) {
- 
+    .pot-container {
+        position: absolute;
+        top: 50%;
+        right: 50%;
+    }
+    .player-avatar--container {
+        height: 75px !important;
+        width: 75px !important;
+    }
+    .mt-32 {
+        width: 70%;
+        height: 65%;
+        left: 13%;
+        margin-top: 14% !important;
+    }
+    .player-info--name {
+        bottom: 18px;
+        padding: 8px 0;
+        width: 120px !important;
+        left: 158%;
+        font-size: 12px !important;
+        z-index: 1!important;
+    }
+
+    .table-data{
+        overflow-y: scroll;
+        height: 230px;
+        width: 100%;
+    }
 
     /* @media (max-width: 768px){ */
         .poker-app--background {
@@ -399,31 +440,45 @@ color: white;
     height: 60px;
 }
 .player-avatar--container {
-    height: 50px !important;
-    width: 50px !important;
+    /* height: 50px !important;
+    width: 50px !important; */
 }
 
-    .player-info--name {
+    /* .player-info--name {
         bottom: 13px;
         padding: 6px 0;
         width: 120px !important;
         left: 207%;
         font-size: 12px !important;
-    }
+    } */
     /* bottom: 17px;
     padding: 6px 0;
     width: 120px !important;
     left: 190%;
     font-size: 12px !important; */
 
- .player-info--stash--container {
-      
-    margin-top: -34px;
+
+    .player-info--stash--container {
+        background: #000000d9;
+        border-radius: 20px;
+        margin-left: -72px;
+        margin-top: -42px;
+        padding: 7px;
+        width: 99px;
+
+        /* margin-top: -39px; */
+        /* margin-left: -72px;
+        width: 99px;
+        background: #000000d9;
+        padding: 6px 6px;
+        border-radius: 20px; */
+    
+    /* margin-top: -34px;
     margin-left: -72px;
     width: 99px;
     background: #000000d9;
     padding: 6px 0px;
-    border-radius: 20px;
+    border-radius: 20px; */
     }
 
     /* .mt-32 {
@@ -433,10 +488,10 @@ color: white;
     margin-top: 11% !important;
 } */
 .mt-32 {
-    width: 70%;
+    /* width: 70%;
     height: 65%;
     left: 14%;
-    margin-top: 14% !important;
+    margin-top: 14% !important; */
 }
 /* .p0 {
     bottom: 0.262%;
@@ -444,34 +499,50 @@ color: white;
     transform: translateX(-50%);
 } */
 .p0 {
-    bottom: 5.262%;
-    left: 50%;
+    bottom: 3.262%;
+    left: 49%;
+    /* bottom: 5.262%;
+    left: 50%; */
     transform: translateX(-50%);
 }
 /* .p1 {
     bottom: 18.262%;
     left: 13.107143%;
 } */
-.p1 {
+/* .p1 {
     bottom: 21.262%;
     left: 18.107143%;
+} */
+.p1 {
+    bottom: 24.262%;
+    left: 13.107143%;
+    /* bottom: 18.262%;
+    left: 14.107143%; */
 }
 /* .p4 {
     bottom: 18.262%;
     right: 19.107143%;
 } */
 .p4 {
-    bottom: 21.262%;
-    right: 18.107143%;
+    bottom: 26.262%;
+    right: 16.107143%;
+    /* bottom: 21.262%;
+    right: 18.107143%; */
 }
 .p3 {
-    bottom: 58.1518%;
-    right: 26%;
+    bottom: 55.1518%;
+    right: 23%;
+    /* bottom: 58.1518%;
+    right: 27%; */
+    /* bottom: 58.1518%;
+    right: 26%; */
     /* right: 22%; */
 }
 .p2 {
-    bottom: 57.1518%;
-    left: 24%;
+    bottom: 54.1518%;
+    left: 18%;
+    /* bottom: 57.1518%;
+    left: 24%; */
     /* left: 18%; */
 }
 }

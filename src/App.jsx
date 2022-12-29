@@ -469,7 +469,7 @@ imageLoaderRequest.send();
         <h4 className='float-left result-name'>Result | Game ID:</h4>
         <span className='float-right result-bg'><span className='result-icon'>X</span></span>
         </div>
-       
+      <div className='table-data'>
    <table className='w-100'>
   <thead className='result-header'>
     <tr className="red">
@@ -502,6 +502,7 @@ imageLoaderRequest.send();
           { this.renderBestHands() }
          
           </table>
+          </div> 
           <div className='bg-green w-100 footer-height'>
             <div className='result-footer'>       
              <button className="showdown--nextRound--button" onClick={() => this.handleNextRound()}> Next Round </button></div>

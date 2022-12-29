@@ -19,11 +19,11 @@ const ShowdownPlayer1 = (props) => {
     <div className="player-entity--container1">
 
       <div className='color-black'>   
-    <span className='play-name'>{`${name}`} </span>   <img 
-            className="player-avatar--image result-img" 
+    <span className='play-name'>{`${name}`} </span>  
+     {/* <img className="player-avatar--image result-img" 
             src={avatarURL}  
             alt="Player Avatar"
-        />
+        /> */}
         </div>
     
    
