@@ -400,11 +400,12 @@ imageLoaderRequest.send();
     const max = players[activePlayerIndex].chips + players[activePlayerIndex].bet
     return ((players[activePlayerIndex].robot) || (phase === 'showdown')) ? null : (
       <React.Fragment>
-        <button className='action-button' onClick={() => this.handleBetInputSubmit(betInputValue, min, max)}>
-          {renderActionButtonText(highBet, betInputValue, players[activePlayerIndex])}
-        </button>
+        
         <button className='fold-button' onClick={() => this.handleFold()}>
           Fold
+        </button>
+        <button className='action-button' onClick={() => this.handleBetInputSubmit(betInputValue, min, max)}>
+          {renderActionButtonText(highBet, betInputValue, players[activePlayerIndex])}
         </button>
         {/* <button className='raise-button' onClick={() => this.handleBetInputSubmit( min, max)}>
           Raise

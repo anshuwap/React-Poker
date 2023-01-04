@@ -46,7 +46,7 @@
         transform: translateX(-50%);
         width: 100%;
         color: whitesmoke;
-        background-color: rgba(0,0,0,0.86);
+        background-color:black;
         font-size: 12px;
         width: 160px;
     }
@@ -54,8 +54,9 @@
         /* display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
-        background-color: white; */
+        align-items: center; */
+        /* background-color: transparent;
+        border: 0px solid gray; */
         border-radius: 5px;
         /* font-size: 1.8em !important; */
         font-size: 1.5em !important;
@@ -68,10 +69,26 @@
         border-radius: 50px;
         padding: 6px 6px 6px 6px;
     }
-    .abscard {
+    /* .abscard {
         position: absolute;
         top: -9px !important;
         left: 77px;
+       } */
+       .abscard {
+        position: absolute;
+        top: -9px !important;
+        left: 120px;
+    }
+    .abscard .playing-card {
+       background-color: transparent;
+        border: 0px solid gray;
+    }
+    .robotcard1 img{
+        transform: rotate(345deg);
+    }
+    .abscard :first-of-type + .robotcard1 img{
+    transform: rotate(15deg);
+    margin-right: 40px;
     }
     /* .abscard {  
             position: absolute;
@@ -104,6 +121,7 @@
         background-color: black !important;
        position: relative;
             z-index: 2;
+            /* padding: 8px; */
         
     }
 
@@ -121,13 +139,32 @@
         /* background-image: url(".././public/assets/assets1/Floor.png") !important; */
     }
 
+    .dealer-chip-icon-container {
+        position: absolute;
+        /* top: 15px;
+        left: 40px; */
+        /* top: 12px;
+        left: 42px;
+        height: 25px;
+        width: 25px; */
+        top: 10px;
+        left: 36px;
+        height: 23px;
+        width: 23px;
+        z-index: 100;
+        border: 2px solid brown;
+        border-radius: 50%;
+        background: black;
+    }
     
     .action-button{
+        margin: 0 80px;
         height: 45px;
         width: 150px;
-  background-color: rgba(4, 4, 33, 0.754);
+  background-color: #093F6E;
+   /* rgba(4, 4, 33, 0.754); */
 border-radius: 15px !important;
-border: 3px solid rgba(4, 4, 33, 0.754);
+border: 3px solid #093F6E;
 font-size: 18px;
 color: white;
     }  
@@ -136,19 +173,20 @@ color: white;
         height: 45px;
         width: 150px;
         /* margin: 0 144px; */
-        margin: 0 80px;
-        background-color: rgba(219, 27, 27, 0.754);
+        /* margin: 0 80px; */
+        background-color: #A10F0F;
         border-radius: 15px !important;
-        border: 3px solid rgba(219, 27, 27, 0.754);
+        border: 3px solid #A10F0F;
         font-size: 18px;
         color: white;
     }
     .raise-button{
         height: 45px;
         width: 150px;
-        background-color: rgb(3, 110, 56);
+        /* background-color: rgb(3, 110, 56); */
+        background-color: #0B615A ;
         border-radius: 15px !important;
-        border: 3px solid rgb(3, 110, 56);
+        border: 3px solid #0B615A;
         font-size: 18px;
         color: white;
     }
@@ -262,9 +300,9 @@ color: white;
     .drop-button{
         text-decoration: none; 
         width: 30%;
-        background: #8686bf;
+        background: #356297;
         border-radius: 13px;
-        color: white;
+        color: white !important;
         font-size: 14px;
         padding: 6px 0px;
         text-align: center;
@@ -276,7 +314,7 @@ color: white;
         width: 30%;
         background: white;
         border-radius: 13px;
-        color: black;
+        color: black !important;
         font-size: 14px;
         padding: 6px 0px;
         text-align: center;
@@ -297,6 +335,9 @@ color: white;
     }
     .slider-tracks > div {
         width: 56vh !important; 
+    }
+    .slider-handles > div {
+        background-color: #EAB10D !important;
     }
     .slider-handles > div > div {
         color: white !important;
@@ -355,7 +396,7 @@ color: white;
 }
 .close-bg{
         position: absolute;
-        background-color: #fefe0bfa;
+        background-color: #EAB10D;
         right: 0px;
         border-radius: 50%;
         top: -9px;
@@ -376,10 +417,29 @@ color: white;
     }
     @media screen and (orientation:landscape) and
 (min-device-width: 320px) and (max-device-width: 768px) {
+    .p1 .player-info--name , .p2 .player-info--name  {
+        bottom: 18px;
+        padding: 8px 0;
+        width: 120px !important;
+        left: -55%;
+        font-size: 12px !important;
+        z-index: 1!important;
+        /* transform: rotate(179deg); */
+        border-radius: 25px 0px 0px 25px;
+    }
+    .p1 .abscard , .p2 .abscard {
+        position: absolute;
+        top: -9px !important;
+        left: -93px;
+        /* left: -81px; */
+    }
     .pot-container {
         position: absolute;
-        top: 50%;
+        top: 42%;
         right: 50%;
+    }
+    .pot-container h4{
+        font-size: 14px;
     }
     .player-avatar--container {
         height: 75px !important;
@@ -433,8 +493,9 @@ color: white;
     position: absolute;
     display: flex;
     justify-content: center;
-    top: calc(52.5% - 60px);
-    left: calc(50% - 100px);
+    top: calc(67.5% - 60px);
+    /* top: calc(52.5% - 60px); */
+    left: calc(49% - 100px);
     display: flex;
     width: 200px;
     height: 60px;
@@ -465,6 +526,7 @@ color: white;
         margin-top: -42px;
         padding: 7px;
         width: 99px;
+        display: none;
 
         /* margin-top: -39px; */
         /* margin-left: -72px;
@@ -500,7 +562,7 @@ color: white;
 } */
 .p0 {
     bottom: 3.262%;
-    left: 49%;
+    left: 48%;
     /* bottom: 5.262%;
     left: 50%; */
     transform: translateX(-50%);
@@ -539,10 +601,21 @@ color: white;
     /* right: 22%; */
 }
 .p2 {
-    bottom: 54.1518%;
-    left: 18%;
+    bottom: 55.1518%;
+    left: 19%;
+    /* bottom: 54.1518%;
+    left: 18%; */
     /* bottom: 57.1518%;
     left: 24%; */
     /* left: 18%; */
+}
+.Dealerr{
+    font-size: 14px;
+    color: white; 
+    /* margin: 2px 1px 1px 2px; */
+    margin: 1px 1px 1px 2px;
+}
+.activePlayer {
+    border: 2px solid blue;
 }
 }

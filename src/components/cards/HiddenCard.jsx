@@ -10,10 +10,16 @@ const HiddenCard = (props) => {
     applyFoldedClassname
   } = props;
   return(
-    <div 
+    // <img  key={`${suit} ${cardFace}`} 
+    // className={` winner-img playing-card1 cardIn robotcard1${(applyFoldedClassname ? ' folded' : '')}`} 
+    // style={{animationDelay: `${(applyFoldedClassname) ?  0 : animationDelay}ms`}}>
+    //     src={"./assets/assets1/cards.jpg"} alt="winner" />
+     <div 
       key={`${suit} ${cardFace}`} 
-      className={`playing-card cardIn robotcard${(applyFoldedClassname ? ' folded' : '')}`} 
+      className={`playing-card cardIn robotcard1${(applyFoldedClassname ? ' folded' : '')}`} 
       style={{animationDelay: `${(applyFoldedClassname) ?  0 : animationDelay}ms`}}>
+      <img 
+        src={"./assets/assets1/cards.jpg"} alt="winner" />
     </div>
   )
 }

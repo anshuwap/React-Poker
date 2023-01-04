@@ -32,8 +32,10 @@ const Player = (props) => {
   const renderDealerChip = () => {
     if (hasDealerChip) {
       return (
+       
         <div className="dealer-chip-icon-container">
-          <img src={dealerChipImageURL} alt="Dealer Chip"/>
+           <h5 className='Dealerr'>D</h5>
+          {/* <img src={dealerChipImageURL} alt="Dealer Chip"/> */}
         </div>
       )
     } else return null;
