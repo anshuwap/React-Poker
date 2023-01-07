@@ -11,7 +11,7 @@ import './Poker.css';
 import './customstyle.css';
 
 import Spinner from './Spinner';
-import WinScreen from './WinScreen'
+import WinScreen from './WinScreen';
 
 import Player from "./components/players/Player";
 import ShowdownPlayer from "./components/players/ShowdownPlayer";
@@ -80,7 +80,8 @@ state = {
       3: {isAnimating: false, content: null},
       4: {isAnimating: false, content: null},
       5: {isAnimating: false, content: null}
-    }
+    },
+    isModalOpen: false
   }
 
   cardAnimationDelay = 0;
@@ -461,16 +462,41 @@ imageLoaderRequest.send();
       )
   }
 
+//   constructor(props) {
+//     super(props)
+
+//     this.state = {
+//         isModalOpen: false,
+//     }
+// }
+
+
+toggleUserModal = ()=>{
+    this.setState((state)=>{
+        return{
+            isModalOpen: !state.isModalOpen
+        }
+    })
+}
+
+
 
   renderShowdown = () => {
     return(
       <div className='showdown-container--wrapper result'>
        
-        <div className='result-background'>
+        <div className='result-background '>
         <h4 className='float-left result-name'>Result | Game ID:</h4>
-        <span className='float-right result-bg'><span className='result-icon'>X</span></span>
+        <span className='float-right result-bg'>
+        {/* {this.state.isModalOpen ? */}
+          <span className='result-icon' 
+          // onClose={this.toggleUserModal}
+          >X</span>
+          {/* :null} */}
+          </span>
+
         </div>
-      <div className='table-data'>
+      <div className='table-data '>
    <table className='w-100'>
   <thead className='result-header'>
     <tr className="red">

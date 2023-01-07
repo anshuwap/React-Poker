@@ -99,7 +99,7 @@ const Player = (props) => {
             alt="Player Avatar" 
           />
           <h5 className="player-info--name" style={{'fontSize': (name.length < 14) ? 12 : 10}}>
-            {`${name}`}
+          <span className="player-threedot"> {`${name}`}</span>  
           </h5>
           <div className="player-info--stash--container">
             <img className="player-info--stash--image" src={chipCountImageURL} alt="Player Stash"/>
