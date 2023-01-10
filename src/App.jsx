@@ -421,7 +421,7 @@ imageLoaderRequest.send();
         <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div> */}
       <div className="modal-body d-flex ">
-      <div className=" w-75 d-flex1">
+      <div className=" w-50 d-flex1">
     <a className=" drop-text mb-3" href="#">0.3</a>
     <a className=" drop-button" href="#">Max</a>
     <a className=" drop-button" href="#">Min</a>
@@ -430,7 +430,7 @@ imageLoaderRequest.send();
 
 
   </div>
-  <div className=" slider-boi1 w-25">
+  <div className=" slider-boi1 w-50">
             { (!this.state.loading)  && renderActionMenu(highBet, players, activePlayerIndex, phase, this.handleBetInputChange)}
           </div>
       </div>
@@ -439,7 +439,7 @@ imageLoaderRequest.send();
   </div>
 </div>
 
-<button className="raise-button" data-bs-toggle="modal" href="#exampleModalToggle" role="button"> Raise</button>
+<button className="raise-button" data-bs-toggle="modal" href="#exampleModalToggle" role="button"> <i className="fa fa-arrow-up me-3" aria-hidden="true"></i> Raise</button>
   
    {/* <div className="dropdown">
   <button className="raise-button dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">

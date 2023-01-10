@@ -30,7 +30,8 @@
         width: 75%;
         height: 70%;
         left: 12%;
-        margin-top: 11% !important;
+        margin-top: 12% !important;
+        /* margin-top: 11% !important; */
     }
     .player-info--name {
         display: flex;
@@ -57,10 +58,12 @@
         align-items: center; */
         /* background-color: transparent;
         border: 0px solid gray; */
-        border-radius: 5px;
+        /* border-radius: 5px; */
+        border-radius: 2px;
         /* font-size: 1.8em !important; */
         font-size: 1.5em !important;
-    height: 45px;
+    height: 40px;
+    /* border:1px solid white; */
     }
     .player-avatar--container {
         position: relative;
@@ -261,7 +264,8 @@ color: white;
         color: white;
         height: auto;
         min-height: 100%;
-        width: 90%;
+        width: 85%;
+        /* width: 90%; */
         z-index: 100;
     }
     .result{
@@ -499,6 +503,7 @@ color: white;
     }
     .pot-container h4{
         font-size: 14px;
+        margin-top:-14px;
     }
     .player-avatar--container {
         height: 75px !important;
@@ -506,9 +511,12 @@ color: white;
     }
     .mt-32 {
         width: 70%;
-        height: 65%;
+        /* height: 65%; */
         left: 13%;
-        margin-top: 14% !important;
+        height: 65vh;
+        margin-top: 26vh !important;
+        /* margin-top: 12% !important; */
+        /* margin-top:14% !important; */
     }
     .player-info--name {
         bottom: 18px;
@@ -523,6 +531,7 @@ color: white;
         overflow-y: scroll;
         height: 215px;
         width: 100%;
+        background: white;
     }
 
     /* @media (max-width: 768px){ */
@@ -545,14 +554,16 @@ color: white;
 }
         .poker-table--container {
     position: absolute;
-    top: 44% !important;
+    top: 42% !important;
+    /* top: 44% !important; */
     /* top: 51% !important; */
         }
         .community-card-container {
     position: absolute;
     display: flex;
     justify-content: center;
-    top: calc(67.5% - 60px);
+    top: calc(67.5% - 50px);
+    /* top: calc(67.5% - 60px); */
     /* top: calc(52.5% - 60px); */
     left: calc(49% - 100px);
     display: flex;
@@ -620,7 +631,8 @@ color: white;
     transform: translateX(-50%);
 } */
 .p0 {
-    bottom: 2%;
+    bottom: -4%;
+    /* bottom: 2%; */
     left: 50%;
     /* bottom: 3.262%;
     left: 48%; */
