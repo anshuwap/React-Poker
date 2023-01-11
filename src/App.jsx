@@ -412,17 +412,18 @@ imageLoaderRequest.send();
           Raise
         </button> */}
 
-<div className="modal fade w-30 ml-50" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+<div className="modal fade w-30 ml-50 overflow-hidden" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
   <div className="modal-dialog ">
     <div className="modal-content">
-    <button type="button" className="btn-close close-bg" data-bs-dismiss="modal" aria-label="Close"></button>
+    <button type="button" className="btn-close close-bg" data-bs-dismiss="modal" aria-label="Close"><i class="fa fa-times" aria-hidden="true"></i></button>
       {/* <div className="modal-header">
     
         <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div> */}
-      <div className="modal-body d-flex ">
-      <div className=" w-50 d-flex1">
-    <a className=" drop-text mb-3" href="#">0.3</a>
+      <div className="modal-body d-flex2 row ">
+      <a className=" drop-text mb-3" href="#">0.3</a>
+      <div className=" w-751 d-flex1 col-8">
+   
     <a className=" drop-button" href="#">Max</a>
     <a className=" drop-button" href="#">Min</a>
     <a className=" drop-button" href="#">+</a>
@@ -430,7 +431,7 @@ imageLoaderRequest.send();
 
 
   </div>
-  <div className=" slider-boi1 w-50">
+  <div className=" slider-boi1 w-251 col-4">
             { (!this.state.loading)  && renderActionMenu(highBet, players, activePlayerIndex, phase, this.handleBetInputChange)}
           </div>
       </div>

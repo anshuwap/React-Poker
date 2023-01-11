@@ -6,6 +6,7 @@ function Handle({
 }) {
   return (
     <div
+    className='fa fa-check-circle'
       style={{
         left: `${percent}%`,
         position: 'absolute',
@@ -20,6 +21,7 @@ function Handle({
         borderRadius: '50%',
         backgroundColor: '#2C4870',
         color: '#aaa',
+
       }}
       {...getHandleProps(id)}
     >
