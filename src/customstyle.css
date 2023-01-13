@@ -63,7 +63,8 @@
         /* font-size: 1.8em !important; */
         font-size: 1.5em !important;
     height: 40px;
-    /* border:1px solid white; */
+    margin-top: 3px;
+    border:1px solid #e1dbdb;
     }
     .player-avatar--container {
         position: relative;
@@ -88,10 +89,12 @@
     }
     .robotcard1 img{
         transform: rotate(345deg);
+        border-radius: 4px;
     }
     .abscard :first-of-type + .robotcard1 img{
     transform: rotate(15deg);
     margin-right: 40px;
+    border-radius: 4px;
     }
 
     .abscard .white-card .white-card-format{
@@ -110,6 +113,7 @@
     align-content: center;
     justify-content: center;
     margin-left: -61px;
+    border-radius: 4px;
     }
 
     .abscard :first-of-type + .white-card .white-card-format {
@@ -184,7 +188,7 @@
     .game-action-bar {
         background-color:transparent !important;
         height: 5px !important;
-        bottom: 24px !important;
+        bottom: 19px !important;
         /* top: 92%; */
         /* background-image: linear-gradient(#58052b 60%, #e85a07 82%); */
         /* background-image: url(".././public/assets/assets1/Floor.png") !important; */
@@ -210,7 +214,7 @@
     
     .action-button{
         margin: 0 80px;
-        height: 40px;
+        height: 38px;
         width: 150px;
   background-color: #093F6E;
    /* rgba(4, 4, 33, 0.754); */
@@ -221,7 +225,7 @@ color: white;
     }  
 
     .fold-button {
-        height: 40px;
+        height: 38px;
         width: 150px;
         /* margin: 0 144px; */
         /* margin: 0 80px; */
@@ -232,7 +236,7 @@ color: white;
         color: white;
     }
     .raise-button{
-        height: 40px;
+        height: 38px;
         width: 150px;
         /* background-color: rgb(3, 110, 56); */
         background-color: #0B615A ;
@@ -365,24 +369,28 @@ color: white;
         border-radius: 13px;
         color: white !important;
         font-size: 14px;
-        padding: 6px 0px;
+        /* padding: 6px 0px;
         text-align: center;
         margin-left: 10px;
-        margin-top:10px;
+        margin-top:10px; */
+        padding: 4px 0px;
+        text-align: center;
+        margin-left: 10px;
+        margin-top: 9px;
     }
     .drop-text{
         text-decoration: none; 
         width: 100%;
         background: white;
         font-weight: 600;
-         font-size: 15px;
+         font-size: 14px;
         border-radius: 13px;
         color:#EF2222 !important;
       
-        padding: 6px 0px;
+        padding: 3px 0px;
         text-align: center;
         /* margin-left: 10px; */
-        margin-top:10px;
+        margin-top:5px;
     }
     .slider-boi1{
         transform: rotate(90deg);
@@ -437,7 +445,7 @@ color: white;
         margin-top: -30px; */
         transform: rotate(355deg);
         margin-left: 0px;
-        margin-top: -30px;
+        margin-top: -25px;
         /* color: white !important;
         font-size: 18px !important;
         transform: rotate(272deg); */
@@ -471,6 +479,10 @@ color: white;
     }
     .w-30{
         width: 175px;
+        margin-top: 5.5%;
+    }
+    .modal-padding{
+        padding: 1.2rem 1.2rem .2rem 1rem;
     }
 
     .overflow-hidden{
@@ -538,6 +550,9 @@ color: white;
     }
     @media screen and (orientation:landscape) and
 (min-device-width: 320px) and (max-device-width: 768px) {
+    body{
+        font-size: 1rem !important;
+    }
     .p1 .player-info--name , .p2 .player-info--name  {
         bottom: 18px;
         padding: 8px 0;
@@ -571,8 +586,9 @@ color: white;
     .mt-32 {
         width: 70%;
         /* height: 65%; */
-        left: 13%;
-        height: 65vh;
+        left: 14%;
+        height: 63vh;
+        /* height: 65vh; */
         margin-top: 26vh !important;
         /* margin-top: 12% !important; */
         /* margin-top:14% !important; */
@@ -672,6 +688,18 @@ color: white;
     border-radius: 20px; */
     }
 
+    .p0 .player-info--stash--container {
+        display: block;
+        background: black;
+    }
+
+    .p0 .abscard {
+        position: absolute;
+        top: -9px !important;
+        left: -31px;
+        /* left: -81px; */
+    }
+
     /* .mt-32 {
     width: 70%;
     height: 82%;
@@ -765,5 +793,45 @@ color: white;
     overflow: hidden !important;
     text-overflow: ellipsis;
 }
-
+.actionBox {
+   color: #f9f9f7;
+    text-shadow: 0px 0px 0px rgb(0 0 0);
+    padding: 0px;
+    border-radius: 30px;
+    position: absolute;
+    top: 33px;
+    width: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+    
+    background: red;
+    font-size: 12px;
+}
+.player-best-card .playing-card{
+    color: red;
+    height: 30px;
+    width: 25px;
+}
+.betpoint{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 41%;
+    top: 70%;
+}
+.bet{
+    /* position: absolute;
+    left: 43%;
+    top: 59vh; */
+    color: black;
+    font-size: 14px;
+    z-index: 9;
+    background: white;
+    border-radius: 40%;
+    height: 20px;
+    width: 24px;
+}
 }

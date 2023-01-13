@@ -99,7 +99,10 @@ const Player = (props) => {
             alt="Player Avatar" 
           />
           <h5 className="player-info--name" style={{'fontSize': (name.length < 14) ? 12 : 10}}>
-          <span className="player-threedot"> {`${name}`}</span>  
+          <span className="player-threedot"> 
+          {`${name}`}
+          {/* <div className="showdown-player--besthand--cards player-best-card" ><div className="playing-card cardIn white-card " ><h6 className="white-card-format" >8 ♠</h6></div><div className="playing-card cardIn white-card " ><h6 className="white-card-format" >8 ♣</h6></div><div className="playing-card cardIn white-card " ><h6 className="white-card-format" >3 ♠</h6></div><div className="playing-card cardIn white-card " ><h6 className="white-card-format" >3 ♣</h6></div><div className="playing-card cardIn white-card " ><h6 className="white-card-format" >10 ♥</h6></div></div> */}
+          </span>  
           </h5>
           <div className="player-info--stash--container">
             <img className="player-info--stash--image" src={chipCountImageURL} alt="Player Stash"/>

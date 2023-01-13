@@ -304,7 +304,7 @@ imageLoaderRequest.send();
     return (
     
       
-      <tbody className='result-body' >
+      // <tbody className='result-body' >
       <tr>
       <td  key={name}>   
       <ShowdownPlayer1
@@ -332,7 +332,7 @@ imageLoaderRequest.send();
       <td className='color-black'> {handRank} </td>
     </tr>
    
-  </tbody>
+  // </tbody>
 
     
         // <ShowdownPlayer
@@ -420,8 +420,8 @@ imageLoaderRequest.send();
     
         <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div> */}
-      <div className="modal-body d-flex2 row ">
-      <a className=" drop-text mb-3" href="#">0.3</a>
+      <div className="modal-body modal-padding row ">
+      <a className=" drop-text mb-2" href="#">0.3</a>
       <div className=" w-751 d-flex1 col-8">
    
     <a className=" drop-button" href="#">Max</a>
@@ -508,6 +508,7 @@ toggleUserModal = ()=>{
       <th>Won</th>
     </tr>
   </thead>
+  <tbody className='result-body' >
 
 
      
@@ -528,7 +529,7 @@ toggleUserModal = ()=>{
         </div> */}
 
           { this.renderBestHands() }
-         
+          </tbody>
           </table>
           </div> 
           <div className='bg-green w-100 footer-height'>
@@ -550,6 +551,13 @@ toggleUserModal = ()=>{
         {/* table-nobg-svg-01.svg */}
         {/* pocker-img.jpg */}
           <img  className="poker-table--table-image" src={"./assets/assets1/Floor.png"} alt="Poker Table" />
+          <span className='betpoint'>
+            <span className='me-4 bet'>1</span>
+            <span className='me-4 bet'>2</span>
+            <span className='me-4 bet'>3</span>
+            <span className='me-4 bet'>4</span>
+            </span>
+
           {/* <img className="poker-table-position" src={"./assets/assets1/Girl.png"} alt="Poker Table" /> */}
           <img className="poker-table-position mt-32" src={"./assets/assets1/Table.png"} alt="Poker Table" />
           { this.renderBoard() }
@@ -567,9 +575,9 @@ toggleUserModal = ()=>{
           <div className='action-buttons'>
               { this.renderActionButtons() }
           </div>
-          <div className='slider-boi'>
+          {/* <div className='slider-boi'> */}
             {/* { (!this.state.loading)  && renderActionMenu(highBet, players, activePlayerIndex, phase, this.handleBetInputChange)} */}
-          </div>
+          {/* </div> */}
         </div>
       </div>
     )
