@@ -645,6 +645,9 @@ color: white;
     width: 200px;
     height: 60px;
 }
+.community-card-container .playing-card{
+    height: 35px;
+}
 .player-avatar--container {
     /* height: 50px !important;
     width: 50px !important; */
@@ -809,9 +812,17 @@ color: white;
     font-size: 12px;
 }
 .player-best-card .playing-card{
-    color: red;
+    /* color: red;
     height: 30px;
-    width: 25px;
+    width: 25px; */
+
+    color: red;
+    height: 25px;
+    width: 17px;
+    border-radius: 0px 0px 0px 4px;
+}
+.player-best-card  .white-card-format{
+    line-height: .7;
 }
 .betpoint{
     display: flex;
@@ -820,7 +831,7 @@ color: white;
     align-items: center;
     position: absolute;
     left: 41%;
-    top: 70%;
+    top: 64%;
 }
 .bet{
     /* position: absolute;
@@ -834,4 +845,26 @@ color: white;
     height: 20px;
     width: 24px;
 }
+.betvalue{
+        color: #f9f9f7;
+        text-shadow: 0px 0px 0px rgb(0 0 0);
+        padding: 0px;
+        border-radius: 30px;
+        position: absolute;
+        top: -10px;
+        width: 65%;
+        left: 53%;
+        transform: translateX(-50%);
+        z-index: 100;
+        background: #373f68;
+        /* font-size: 10px; */
+        border: 2px solid darkblue;
+        height: 14px;
+    }
+    .betvalue h6{
+        margin-top: -2px;
+        font-size: 0.8rem;
+    }
 }
+
+/* } */

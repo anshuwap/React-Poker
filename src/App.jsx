@@ -480,18 +480,19 @@ toggleUserModal = ()=>{
     })
 }
 
-
-
   renderShowdown = () => {
+    let modalClass = this.state.isModalOpen?'showdown-container--wrapper result d-none':'showdown-container--wrapper result ';
     return(
-      <div className='showdown-container--wrapper result'>
+      
+      <div className={modalClass}>
        
         <div className='result-background '>
         <h4 className='float-left result-name'>Result | Game ID:</h4>
         <span className='float-right result-bg'>
         {/* {this.state.isModalOpen ? */}
           <span className='result-icon' 
-          // onClose={this.toggleUserModal}
+          onClick={this.toggleUserModal}
+       //  onClick={() => this.handleNextRound()}
           >X</span>
           {/* :null} */}
           </span>

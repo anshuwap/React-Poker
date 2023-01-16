@@ -17,9 +17,11 @@ function PlayerStatusNotificationBox({index, isActive, content, endTransition}) 
               }, 25)
             }}
         >
+           
             <div className="actionBox">
             {`${content}`}
             </div>
+          
         </CSSTransition>
     )
 }

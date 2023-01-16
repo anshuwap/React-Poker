@@ -32,7 +32,7 @@ const Player = (props) => {
   const renderDealerChip = () => {
     if (hasDealerChip) {
       return (
-       
+     
         <div className="dealer-chip-icon-container">
            <h5 className='Dealerr'>D</h5>
           {/* <img src={dealerChipImageURL} alt="Dealer Chip"/> */}
@@ -88,6 +88,7 @@ const Player = (props) => {
         content={playerAnimationSwitchboard[arrayIndex].content}
         endTransition={endTransition}
       />
+      <div className="betvalue"><h6>{`${bet}`}</h6></div>
       <div className='centered-flex-row abscard'>
         { renderPlayerCards() }
       </div>
@@ -99,11 +100,21 @@ const Player = (props) => {
             alt="Player Avatar" 
           />
           <h5 className="player-info--name" style={{'fontSize': (name.length < 14) ? 12 : 10}}>
-          <span className="player-threedot"> 
+          {/* <span className="player-threedot"> 
           {`${name}`}
-          {/* <div className="showdown-player--besthand--cards player-best-card" ><div className="playing-card cardIn white-card " ><h6 className="white-card-format" >8 ♠</h6></div><div className="playing-card cardIn white-card " ><h6 className="white-card-format" >8 ♣</h6></div><div className="playing-card cardIn white-card " ><h6 className="white-card-format" >3 ♠</h6></div><div className="playing-card cardIn white-card " ><h6 className="white-card-format" >3 ♣</h6></div><div className="playing-card cardIn white-card " ><h6 className="white-card-format" >10 ♥</h6></div></div> */}
-          </span>  
+        
+          </span>   */}
+      <div className="showdown-player--besthand--cards player-best-card" >
+            <div className="playing-card cardIn white-card " ><h6 className="white-card-format" >8 <br/> ♠</h6></div><div className="playing-card cardIn white-card " >
+              <h6 className="white-card-format" >8 <br/> ♣</h6></div>
+              <div className="playing-card cardIn white-card " >
+                <h6 className="white-card-format" >3 <br/> ♠</h6></div>
+                <div className="playing-card cardIn white-card " >
+                  <h6 className="white-card-format" >3 <br/> ♣</h6></div>
+                  <div className="playing-card cardIn white-card " >
+            <h6 className="white-card-format" >10 <br/> ♥</h6></div></div>
           </h5>
+        
           <div className="player-info--stash--container">
             <img className="player-info--stash--image" src={chipCountImageURL} alt="Player Stash"/>
             <h5>{`${chips}`}</h5>
