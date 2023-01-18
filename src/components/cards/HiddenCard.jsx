@@ -19,7 +19,7 @@ const HiddenCard = (props) => {
       className={`playing-card cardIn robotcard1${(applyFoldedClassname ? ' folded' : '')}`} 
       style={{animationDelay: `${(applyFoldedClassname) ?  0 : animationDelay}ms`}}>
       <img 
-        src={"./assets/assets1/cards.jpg"} alt="winner" />
+        src={"./assets/assets1/cards.jpg"} alt="Hidden card" />
     </div>
   )
 }

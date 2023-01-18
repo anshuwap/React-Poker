@@ -164,13 +164,13 @@
     border-radius: 20px;
     }
      .player-info--bet--container {
-        display: none;
-        margin-top: -70px;
+        /* display: block; */
+        /* margin-top: -70px;
         margin-left: -72px;
         width: 80px;
         background: #000000d9;
         padding: 6px 0px;
-        border-radius: 20px;
+        border-radius: 20px; */
     }
     .player-avatar--image {
         background-color: black !important;
@@ -216,12 +216,12 @@
         margin: 0 80px;
         height: 38px;
         width: 150px;
-  background-color: #093F6E;
+  background-color: #093F6E !important;
    /* rgba(4, 4, 33, 0.754); */
 border-radius: 15px !important;
-border: 3px solid #093F6E;
+border: 3px solid #093F6E !important;
 font-size: 18px;
-color: white;
+color: white !important;
     }  
 
     .fold-button {
@@ -549,7 +549,7 @@ color: white;
         }
     }
     @media screen and (orientation:landscape) and
-(min-device-width: 320px) and (max-device-width: 768px) {
+(min-device-width: 320px) and (max-device-width: 1024px) {
     body{
         font-size: 1rem !important;
     }
@@ -574,6 +574,7 @@ color: white;
         top: 47%;
         /* top: 42%; */
         right: 50%;
+        left: 47%;
     }
     .pot-container h4{
         font-size: 14px;
@@ -595,7 +596,8 @@ color: white;
     }
     .player-info--name {
         bottom: 18px;
-        padding: 8px 0;
+        /* padding: 8px 0; */
+         padding: 6px 0;
         width: 120px !important;
         left: 158%;
         font-size: 12px !important;
@@ -647,6 +649,7 @@ color: white;
 }
 .community-card-container .playing-card{
     height: 35px;
+    width: 30px;
 }
 .player-avatar--container {
     /* height: 50px !important;
@@ -816,13 +819,26 @@ color: white;
     height: 30px;
     width: 25px; */
 
-    color: red;
+    /* color: red;
     height: 25px;
     width: 17px;
-    border-radius: 0px 0px 0px 4px;
+    border-radius: 0px 0px 0px 4px; */
+        color: red;
+    height: 20px;
+    width: 15px;
+    border-radius: 0px 0px 0px 0px;
+    margin-top: 0px !important;
 }
 .player-best-card  .white-card-format{
     line-height: .7;
+    /* line-height: .6; */
+    font-size: .7rem;
+}
+.white-card-format {
+ font-size: .8rem;
+}
+.white-card-format i , .white-card-format span {
+    font-size: .5rem !important; 
 }
 .betpoint{
     display: flex;
@@ -856,7 +872,7 @@ color: white;
         left: 53%;
         transform: translateX(-50%);
         z-index: 100;
-        background: #373f68;
+        background: #66000066;
         /* font-size: 10px; */
         border: 2px solid darkblue;
         height: 14px;

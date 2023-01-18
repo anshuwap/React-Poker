@@ -105,24 +105,41 @@ const Player = (props) => {
         
           </span>   */}
       <div className="showdown-player--besthand--cards player-best-card" >
-            <div className="playing-card cardIn white-card " ><h6 className="white-card-format" >8 <br/> ♠</h6></div><div className="playing-card cardIn white-card " >
-              <h6 className="white-card-format" >8 <br/> ♣</h6></div>
+            <div className="playing-card cardIn white-card " ><h6 className="white-card-format" >8 <br/>
+            <span> ♣ </span>
+            {/* <i className="fa-solid fa-club"></i> */}
+            </h6></div><div className="playing-card cardIn white-card " >
+              <h6 className="white-card-format" >8 <br/>
+              <span> ♣ </span>
+               {/* <i class="fas fa-spade"></i>
+               <i class="fas fa-spade"></i> */}
+               </h6></div>
               <div className="playing-card cardIn white-card " >
-                <h6 className="white-card-format" >3 <br/> ♠</h6></div>
+                <h6 className="white-card-format" >3 <br/> 
+                <span> ♣ </span>
+                {/* <i className="fa fa-heart"></i> */}
+                </h6></div>
                 <div className="playing-card cardIn white-card " >
-                  <h6 className="white-card-format" >3 <br/> ♣</h6></div>
+                  <h6 className="white-card-format" >3 <br/>
+                  <span> ♣ </span>
+                   {/* <i className="fa fa-heart"></i> */}
+                   </h6></div>
                   <div className="playing-card cardIn white-card " >
-            <h6 className="white-card-format" >10 <br/> ♥</h6></div></div>
+            <h6 className="white-card-format" >10 <br/> 
+            <span>  ♥ </span>
+            {/* <i className="fa fa-heart"></i> */}
+            </h6></div></div>
           </h5>
-        
+
+       
           <div className="player-info--stash--container">
             <img className="player-info--stash--image" src={chipCountImageURL} alt="Player Stash"/>
             <h5>{`${chips}`}</h5>
           </div>
-          <div className="player-info--bet--container">
+          {/* <div className="player-info--bet--container">
             <img className="player-info--bet--image" src={playerBetImageURL} alt="Player Bet" />
             <h5>{`Bet: ${bet}`}</h5>
-          </div>
+          </div> */}
           { renderDealerChip() }
         </div>
       </div>
