@@ -19,7 +19,7 @@ const Card = (props) => {
       style={{animationDelay: `${(applyFoldedClassname) ?  0 : animationDelay}ms`}}>
       <h6 className='white-card-format'
         style={{color: `${(suit === 'Diamond' || suit === 'Heart') ? 'red' : 'black'}`}}>
-        {`${cardFace} ${renderUnicodeSuitSymbol(suit)}`}
+     {`${cardFace}`}  <span className='icon-font'>{` ${renderUnicodeSuitSymbol(suit)}`}</span>  
       </h6>
     </div>
   )

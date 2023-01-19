@@ -304,7 +304,7 @@ imageLoaderRequest.send();
     return (
     
       
-      // <tbody className='result-body' >
+
       <tr>
       <td  key={name}>   
       <ShowdownPlayer1
@@ -332,40 +332,6 @@ imageLoaderRequest.send();
       <td className='color-black'> {handRank} </td>
     </tr>
    
-  // </tbody>
-
-    
-        // <ShowdownPlayer
-        //   name={name}
-        //   avatarURL={playerStateData.avatarURL}
-        //   cards={playerStateData.cards}
-        //   roundEndChips={playerStateData.roundEndChips}
-        //    roundStartChips={playerStateData.roundStartChips}
-        //  />  
-
-      //  <div className="showdown-player--besthand--container">
-      //     <h5 className="showdown-player--besthand--heading">
-      //       Best Hand
-      //     </h5>
-      //     <div className='showdown-player--besthand--cards' style={{alignItems: 'center'}}>
-      //       {
-      //         bestHand.map((card, index) => {
-      //           // Reset Animation Delay
-      //           const cardData = {...card, animationDelay: 0}
-      //           return <Card key={index} cardData={cardData}/>
-      //         })
-      //       }
-      //     </div>
-      //   </div> 
-      //    <div className="showdown--handrank">
-      //     {handRank}
-      //   </div> 
-
-       
-      
-      //     {renderNetPlayerEarnings(playerStateData.roundEndChips, playerStateData.roundStartChips)}  
-    
-  
 
     )
   }
@@ -408,9 +374,7 @@ imageLoaderRequest.send();
         <button className='action-button' onClick={() => this.handleBetInputSubmit(betInputValue, min, max)}>
           {renderActionButtonText(highBet, betInputValue, players[activePlayerIndex])}
         </button>
-        {/* <button className='raise-button' onClick={() => this.handleBetInputSubmit( min, max)}>
-          Raise
-        </button> */}
+      
 
 <div className="modal fade w-30 ml-50 overflow-hidden" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
   <div className="modal-dialog ">
@@ -442,22 +406,7 @@ imageLoaderRequest.send();
 
 <button className="raise-button" data-bs-toggle="modal" href="#exampleModalToggle" role="button"> <i className="fa fa-arrow-up me-3" aria-hidden="true"></i> Raise</button>
   
-   {/* <div className="dropdown">
-  <button className="raise-button dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-   Raise
-  </button>
-  <ul className="dropdown-menu">
-  <li><a className="dropdown-item drop-button mb-3" href="#">0.3</a></li>
-    <li><a className="dropdown-item drop-button" href="#">Max</a></li>
-    <li><a className="dropdown-item drop-button" href="#">Min</a></li>
-    <li><a className="dropdown-item drop-button" href="#">+</a></li>
-    <li><a className="dropdown-item drop-button" href="#">-</a></li>
-
-    <div className='slider-boi'>
-            { (!this.state.loading)  && renderActionMenu(highBet, players, activePlayerIndex, phase, this.handleBetInputChange)}
-          </div>
-  </ul>
-</div> */}
+  
      
       </React.Fragment>
       )

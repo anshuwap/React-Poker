@@ -59,12 +59,13 @@
         /* background-color: transparent;
         border: 0px solid gray; */
         /* border-radius: 5px; */
-        border-radius: 4px;
+        border-radius: 2px;
         /* font-size: 1.8em !important; */
         font-size: 1.5em !important;
     height: 40px;
     margin-top: 3px;
-    border:1px solid #e1dbdb;
+    border:0px solid #e1dbdb !important;
+    box-shadow: 1px 1px 1px 1px rgb(158 150 150 / 5%);
     }
     .player-avatar--container {
         position: relative;
@@ -89,12 +90,12 @@
     }
     .robotcard1 img{
         transform: rotate(345deg);
-        border-radius: 4px;
+        border-radius: 2px;
     }
     .abscard :first-of-type + .robotcard1 img{
     transform: rotate(15deg);
     margin-right: 40px;
-    border-radius: 4px;
+    border-radius: 2px;
     }
 
     .abscard .white-card .white-card-format{
@@ -113,7 +114,7 @@
     align-content: center;
     justify-content: center;
     margin-left: -61px;
-    border-radius: 4px;
+    border-radius: 2px;
     }
 
     .abscard :first-of-type + .white-card .white-card-format {
@@ -569,6 +570,11 @@ color: white !important;
         left: -93px;
         /* left: -81px; */
     }
+    .p1 .abscard .white-card .white-card-format , .p2 .abscard .white-card .white-card-format {
+        position: absolute;
+         left: 66px !important;
+       
+    }
     .pot-container {
         position: absolute;
         top: 47%;
@@ -639,17 +645,21 @@ color: white !important;
     position: absolute;
     display: flex;
     justify-content: center;
-    top: calc(67.5% - 50px);
+    top: calc(64.5% - 50px);
     /* top: calc(67.5% - 60px); */
     /* top: calc(52.5% - 60px); */
-    left: calc(49% - 100px);
+    /* left: calc(49% - 100px);
     display: flex;
-    width: 200px;
+    width: 200px; */
+    left: calc(45% - 98px);
+    display: flex;
+    width: 250px;
     height: 60px;
 }
 .community-card-container .playing-card{
     height: 35px;
-    width: 30px;
+    width: 32px;
+    margin-left: 3%;
 }
 .player-avatar--container {
     /* height: 50px !important;
@@ -826,7 +836,7 @@ color: white !important;
         color: red;
     height: 20px;
     width: 15px;
-    border-radius: 0px 0px 0px 0px;
+    border-radius: 2px;
     margin-top: 0px !important;
 }
 .player-best-card  .white-card-format{
@@ -840,6 +850,10 @@ color: white !important;
 .white-card-format i , .white-card-format span {
     font-size: .5rem !important; 
 }
+.white-card-format .icon-font {
+    margin-top: -2px;
+    /* font-size: .7rem !important;  */
+}
 .betpoint{
     display: flex;
     align-content: center;
@@ -847,19 +861,29 @@ color: white !important;
     align-items: center;
     position: absolute;
     left: 41%;
-    top: 64%;
+    top: 59%;
 }
 .bet{
-    /* position: absolute;
-    left: 43%;
-    top: 59vh; */
-    color: black;
-    font-size: 14px;
+    color: #252323a6;
+    font-size: 10px;
+    padding: 2px 10px;
+    text-align: center;
     z-index: 9;
-    background: white;
-    border-radius: 40%;
-    height: 20px;
-    width: 24px;
+    background: #fff;
+    border-radius: 40px;
+    height: auto;
+    width: auto;
+    transform: translate(-12px, 12px);
+    /* color: black;
+    font-size: 14px;
+    padding: 2.2px;
+    text-align: center;
+    z-index: 9;
+    background: #f2ebeb;
+    border-radius: 45%;
+    height: 25px;
+    width: 30px;
+    transform: translate(-12px, 12px); */
 }
 .betvalue{
         color: #f9f9f7;
@@ -867,18 +891,19 @@ color: white !important;
         padding: 0px;
         border-radius: 30px;
         position: absolute;
-        top: -10px;
-        width: 65%;
+        top: -43px;
+        width: auto;
+        padding: 0px 10px;
         left: 53%;
         transform: translateX(-50%);
         z-index: 100;
         background: #66000066;
         /* font-size: 10px; */
-        border: 2px solid darkblue;
+        border: 1px solid #18161680;
         height: 14px;
     }
     .betvalue h6{
-        margin-top: -2px;
+        margin-top: -1px;
         font-size: 0.8rem;
     }
 }

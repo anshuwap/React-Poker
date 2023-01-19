@@ -88,7 +88,7 @@ const Player = (props) => {
         content={playerAnimationSwitchboard[arrayIndex].content}
         endTransition={endTransition}
       />
-      <div className="betvalue"><h6>{`${bet}`}</h6></div>
+      {/* <div className="betvalue"><h6>{`${bet}`}</h6></div> */}
       <div className='centered-flex-row abscard'>
         { renderPlayerCards() }
       </div>
@@ -107,27 +107,26 @@ const Player = (props) => {
       <div className="showdown-player--besthand--cards player-best-card" >
             <div className="playing-card cardIn white-card " ><h6 className="white-card-format" >8 <br/>
             <span> ♣ </span>
-            {/* <i className="fa-solid fa-club"></i> */}
+          
             </h6></div><div className="playing-card cardIn white-card " >
               <h6 className="white-card-format" >8 <br/>
               <span> ♣ </span>
-               {/* <i class="fas fa-spade"></i>
-               <i class="fas fa-spade"></i> */}
+             
                </h6></div>
               <div className="playing-card cardIn white-card " >
                 <h6 className="white-card-format" >3 <br/> 
                 <span> ♣ </span>
-                {/* <i className="fa fa-heart"></i> */}
+               
                 </h6></div>
                 <div className="playing-card cardIn white-card " >
                   <h6 className="white-card-format" >3 <br/>
                   <span> ♣ </span>
-                   {/* <i className="fa fa-heart"></i> */}
+                
                    </h6></div>
                   <div className="playing-card cardIn white-card " >
             <h6 className="white-card-format" >10 <br/> 
             <span>  ♥ </span>
-            {/* <i className="fa fa-heart"></i> */}
+          
             </h6></div></div>
           </h5>
 

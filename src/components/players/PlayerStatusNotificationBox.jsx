@@ -19,6 +19,7 @@ function PlayerStatusNotificationBox({index, isActive, content, endTransition}) 
         >
            
             <div className="actionBox">
+            <div className="betvalue"><h6>0.5</h6></div>
             {`${content}`}
             </div>
           
