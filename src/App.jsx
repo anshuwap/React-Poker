@@ -404,7 +404,7 @@ imageLoaderRequest.send();
   </div>
 </div>
 
-<button className="raise-button" data-bs-toggle="modal" href="#exampleModalToggle" role="button"> <i className="fa fa-arrow-up me-3" aria-hidden="true"></i> Raise</button>
+<button className="raise-button" data-bs-toggle="modal" href="#exampleModalToggle" role="button"> <i className="fa fa-arrow-up me-1" aria-hidden="true"></i> Raise RS.400</button>
   
   
      
