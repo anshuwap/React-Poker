@@ -138,16 +138,24 @@
     }
  
     .showdown-player--besthand--cards .playing-card {
-        border-radius: 5px;
-        /* font-size: 1.8em !important; */
+            height: 39px;
+    width: 35px;
+    background: white;
+    border: 0px solid white;
+    box-shadow: 0rem .1rem .16rem rgba(0,0,0,.3)!important;
+   
+    border-radius: 2px;
+    margin: 0px -2px;
+        /* border-radius: 5px;
+
         font-size: 1.5em !important;
         height: 39px;
         width: 35px;
         background: white;
         border: 0px solid white;
         box-shadow: 0 .125rem .25rem rgba(0,0,0,.3)!important;
-        /* box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important; */
-        border-radius: 2px 0px 0px 2px;
+       
+        border-radius: 2px 0px 0px 2px; */
       
     }
     /* .abscard {  
@@ -313,6 +321,7 @@ color: white !important;
     }
     .result-body tr td{
         font-size: 14px !important;
+        padding: 6px;
     }
     .result-bg{
         height: 30px;
@@ -352,17 +361,19 @@ color: white !important;
         background-color: transparent;
         border: 0px solid white;
         color: #f2ebea;
-        padding: 6px;
+        padding: 12px;
         line-height: 1;
-        font-size: 24px;
+        font-size: 16px;
     }
     /* .winner-img{
         width: 90px;
         height: 80px;
     } */
     .winner-img {
-        width: 65px;
-        height: 40px;
+        width: 60px;
+        height: 35px;
+        /* width: 65px;
+        height: 40px; */
         /* width: 70px;
         height: 55px; */
     }
@@ -387,7 +398,19 @@ color: white !important;
         margin-top: 9px;
     }
     .drop-text{
-        text-decoration: none; 
+        text-decoration: none;
+        width: 82%;
+        background: white;
+        font-weight: 600;
+        font-size: 14px;
+        border-radius: 10px;
+        color: #EF2222 !important;
+        padding: 3px 0px;
+        text-align: center;
+        margin-left: 10px;
+        margin-left: 1rem !important;
+        margin-top: 5px;
+        /* text-decoration: none; 
         width: 100%;
         background: white;
         font-weight: 600;
@@ -397,8 +420,8 @@ color: white !important;
       
         padding: 3px 0px;
         text-align: center;
-        /* margin-left: 10px; */
-        margin-top:5px;
+    
+        margin-top:5px; */
     }
     .slider-boi1{
         transform: rotate(90deg);
@@ -407,7 +430,8 @@ color: white !important;
     width: 100% !important;
     /* transition: height 0.6s ease; */
     /* margin-top: 46vh; */
-    margin-top: -23vh;
+    margin-top: -19vh;
+    /* margin-top: -23vh; */
     margin-left: 54%;
     /* height: 140px; */
     }
@@ -499,7 +523,8 @@ color: white !important;
     }
 
     tr:hover {
-    background-color: rgba(16, 12, 10, 0.306);
+        background-color: black;
+    /* background-color: rgba(16, 12, 10, 0.306); */
     color:white !important;
     }
 
@@ -616,6 +641,7 @@ color: white !important;
         left: 158%;
         font-size: 12px !important;
         z-index: 1!important;
+        height: 35px;
     }
 
     .table-data{
@@ -716,6 +742,8 @@ color: white !important;
     .p0 .player-info--stash--container {
         display: block;
         background: black;
+        margin-top: -47px;
+        height: 35px;
     }
 
     .p0 .abscard {
@@ -834,21 +862,14 @@ color: white !important;
     font-size: 12px;
 }
 .player-best-card .playing-card{
-    /* color: red;
-    height: 30px;
-    width: 25px; */
-
-    /* color: red;
-    height: 25px;
-    width: 17px;
-    border-radius: 0px 0px 0px 4px; */
-        color: red;
+      color: red;
     height: 20px;
     width: 15px;
-    border-radius: 2px;
+    border-radius: 1px;
     margin-top: 0px !important;
     box-shadow: 0 .125rem .25rem rgba(0,0,0,.7)!important;
-    margin: 0px -1px !important;
+    margin: -9px 0px -1px !important;
+    /* margin: 0px -1px !important; */
 }
 .player-best-card  .white-card-format{
     line-height: .7;
@@ -917,6 +938,32 @@ color: white !important;
         margin-top: -1px;
         font-size: 0.8rem;
     }
+    .btn-close:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0rem rgb(13 110 253 / 25%) !important;
+    opacity: 1;
+}
+.player-status{
+    top: 23px;
+    position: absolute;
+    font-size: 10px;
+    /* font-weight: 600; */
+}
+.table-card-text{
+    font-size: 14px;
+    text-align: center;
+    color: black;
+}
+.result-body tr:hover td {
+    /* background-color: rgba(16, 12, 10, 0.306); */
+    color: white !important;
+}
+
+.result-body tr:hover td .table-card-text , .result-body tr:hover td .play-name {
+    /* background-color: rgba(16, 12, 10, 0.306); */
+    color: white !important;
+}
+
 }
 
 /* } */

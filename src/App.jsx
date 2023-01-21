@@ -327,6 +327,7 @@ imageLoaderRequest.send();
               })
             }
             </div>
+            <h6 className='table-card-text mt-1'>High Cards</h6>
          </td>
       <td>{renderNetPlayerEarnings(playerStateData.roundEndChips, playerStateData.roundStartChips)}</td>
       <td className='color-black'> {handRank} </td>

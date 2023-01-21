@@ -126,9 +126,16 @@ const Player = (props) => {
                   <div className="playing-card cardIn white-card " >
             <h6 className="white-card-format" >10 <br/> 
             <span>  ♥ </span>
+           
           
-            </h6></div></div>
+            </h6>
+            </div>
+            
+        </div>
+        <span className='player-status'>High Cards</span>
           </h5>
+
+         
 
        
           <div className="player-info--stash--container">
